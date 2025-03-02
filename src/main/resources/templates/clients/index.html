@@ -26,15 +26,15 @@
         </tr>
         </thead>
         <tbody class="table-group-driver">
-        <tr th:each="client : ${clients}"></tr>
+        <tr th:each="client : ${clients}">
             <td th:text="${client.id}"></td>
-            <td th:text="@{client.firstName} + ' ' + ${client.lastName}}"></td>
+            <td th:text="@{client.firstName}"></td>
+            <td th:text="${client.lastName}"></td>
             <td th:text="${client.email}"></td>
             <td th:text="${client.phone}"></td>
             <td th:text="${client.address}"></td>
             <td th:text="${client.status}"></td>
             <td th:text="${client.createdAt.toString().substring(0, 10)}"></td>
-
             <td style="white-space: nowrap">
                 <a class="btn btn-primary btn sm"
                    th:href="@{/clients/edit(id=${client.id})}">Edit
@@ -43,6 +43,7 @@
                    th:href="return confirm('Are you sure?')">Delete
                 </a>
             </td>
+          </tr>
         </tbody>
     </table>
 </div>
