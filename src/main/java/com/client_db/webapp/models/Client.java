@@ -19,6 +19,7 @@ public class Client {
     @Column(unique = true, nullable = false)
     private String email;
 
+    @Column(nullable = true)
     private String phone;
     private String address;
     private String status; // New, Permanent, Lead, Occasional, Inactive
