@@ -1,6 +1,6 @@
 # Client Manager - CRUD App (Spring Boot)
 
-This is a simple CRUD application written in Java using Spring Boot. The app allows you to manage clients: create, read, update, and delete. The data is stored in MySQL database.
+This is a simple CRUD application written in Java using Spring Boot. The app allows you to manage clients: create, read, update and delete. The data is stored in MySQL database.
 
 ## Features
 
@@ -9,7 +9,7 @@ This is a simple CRUD application written in Java using Spring Boot. The app all
 - Edit client information
 - Delete client
 - Search client
-- Export all clients into Excel file
+- Export all clients to Excel file
 
 ## Technologies Used
 
@@ -26,6 +26,7 @@ This is a simple CRUD application written in Java using Spring Boot. The app all
 
 ```bash
  git clone https://github.com/BarisTekir/cv-project-app.git
+ cd cv-project-app
 ```
 
 2. **Configure the MySQL database:**
@@ -39,6 +40,18 @@ This is a simple CRUD application written in Java using Spring Boot. The app all
      (or the user you configured).
 
    
-3. **Once started, the app will be available at:http://localhost:9090**
+3. **Run the application**
+    
+    3.1.***Use the Maven wrapper:***
+    ```bash
+    ./mvnw spring-boot:run
+    ```
+   3.2.***Or, if Maven is installed globally:***
+    ```bash
+     mvn spring-boot:run
+    ```
+   3.3.***Once started, the app will be available at:http://localhost:9090***
 
+## License
 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
